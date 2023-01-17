@@ -7,19 +7,30 @@ describe('ShoppingList', () => {
     const shoppingList = {
       id: 1,
       name: 'My List',
-      shoppingItems: [{
-        id: 1,
-        name: 'apple'
-      }]
+      shoppingItems: [
+        {
+          id: 1,
+          name: 'apple',
+        },
+      ],
     };
-    render(
-      <ShoppingList shoppingList={shoppingList}/>
+    render(<ShoppingList shoppingList={shoppingList} />);
+    const title = screen.queryByTestId(
+      `shopping-list-name-${shoppingList.id}`
     );
-    const list = screen.queryByTestId(`shopping-list-${shoppingList.id}`);
+    expect(title).toMatchInlineSnapshot(`
+      <div
+        data-testid="shopping-list-name-1"
+      >
+        My List
+      </div>
+    `);
+    const list = screen.queryByTestId(
+      `shopping-list-${shoppingList.id}`
+    );
     expect(list).not.toBe(null);
   });
 });
-
 
 //  set on submit = jest.fn() - pass into real function as a prop
 // render the component and pass in id, and on submit (render)
