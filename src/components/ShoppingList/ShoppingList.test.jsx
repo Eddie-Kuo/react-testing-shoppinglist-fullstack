@@ -3,7 +3,7 @@ import ShoppingList from './ShoppingList';
 // import ShoppingListForm from './ShoppingListForm';
 
 describe('ShoppingList', () => {
-  test('renders a list', () => {
+  test('renders a shopping list', () => {
     const shoppingList = {
       id: 1,
       name: 'My List',
