@@ -8,7 +8,7 @@ export default function ShoppingListItemForm({ onSubmit }) {
   };
 
   const [shoppingItem, setShoppingItem] = useState(oldShoppingItem);
-  console.log('shoppingItem', shoppingItem);
+  // console.log('shoppingItem', shoppingItem);
 
   return <>
     <form onSubmit={(e) => {
