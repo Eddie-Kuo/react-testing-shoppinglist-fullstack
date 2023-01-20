@@ -14,6 +14,7 @@ export default function ShoppingListItemForm({ onSubmit }) {
     <form onSubmit={(e) => {
       e.preventDefault();
       onSubmit(shoppingItem);
+      setShoppingItem(oldShoppingItem);
     }}>
       <input 
         data-testid={'shopping-list-item-input'}
