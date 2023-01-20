@@ -40,10 +40,38 @@ describe('ShoppingLists', () => {
             >
               MY LIST 1
             </div>
+            <form>
+              <input
+                data-testid="shopping-list-item-input"
+                placeholder="Add Item"
+                value=""
+              />
+              <input
+                placeholder="Quantity"
+                value=""
+              />
+              <button
+                type="submit"
+              >
+                Add
+              </button>
+            </form>
             <ol
               data-testid="shopping-list-1"
             >
-              <li />
+              <li>
+                <div>
+                  <span
+                    data-testid="shopping-item"
+                  >
+                    Item: 
+                    , Amount: 
+                    <button>
+                      delete
+                    </button>
+                  </span>
+                </div>
+              </li>
             </ol>
           </div>
         </li>
@@ -54,10 +82,38 @@ describe('ShoppingLists', () => {
             >
               MY LIST 2
             </div>
+            <form>
+              <input
+                data-testid="shopping-list-item-input"
+                placeholder="Add Item"
+                value=""
+              />
+              <input
+                placeholder="Quantity"
+                value=""
+              />
+              <button
+                type="submit"
+              >
+                Add
+              </button>
+            </form>
             <ol
               data-testid="shopping-list-2"
             >
-              <li />
+              <li>
+                <div>
+                  <span
+                    data-testid="shopping-item"
+                  >
+                    Item: 
+                    , Amount: 
+                    <button>
+                      delete
+                    </button>
+                  </span>
+                </div>
+              </li>
             </ol>
           </div>
         </li>

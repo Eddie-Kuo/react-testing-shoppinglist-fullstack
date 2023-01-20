@@ -2,7 +2,9 @@ export default function ShoppingListItem({ shoppingItem }) {
   return(
     <>
       <div>
-        <span>
+        <span 
+          data-testid={'shopping-item'}
+        >
           Item: {shoppingItem.item}, 
           Amount: {shoppingItem.quantity} 
           <button>delete</button>
